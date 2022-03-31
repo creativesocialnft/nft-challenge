@@ -19,9 +19,10 @@ function NFTDropPage() {
             />
           </div>
           <div className="space-y-2 p-5 text-center">
-            <h1 className="text-4xl font-bold text-white">CS Apes</h1>
+            <h1 className="text-4xl font-bold text-white">PAPAFAM Apes</h1>
             <h2 className="text-xl text-gray-300">
-              A collection of PAPAFAM Apes who live & breathe
+              The PAPAFAM collection - What's Eating Gilbert The Ape that's
+              laser focused!
             </h2>
           </div>
         </div>
