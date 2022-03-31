@@ -47,7 +47,7 @@ function NFTDropPage() {
             }
             className="rounded-full bg-rose-400 px-4 py-2 text-xs font-bold text-white lg:px-5 lg:py-3 lg:text-base"
           >
-            {address ? 'Disconnect' : 'Conenct'}
+            {address ? 'Disconnect' : 'Conncet'}
           </button>
         </header>
         <hr className="my-2 border" />
@@ -72,9 +72,11 @@ function NFTDropPage() {
           <p className="pt-2 text-green-500">13 / 21 NFT's Claimed</p>
         </div>
         {/* Mint Button */}
-        <button className="text-full mt-10 h-16 w-full rounded-full bg-red-600 text-2xl font-bold text-white">
-          Mint NFT (0.01 ETH)
-        </button>
+        {address && (
+          <button className="text-full mt-10 h-16 w-full rounded-full bg-red-600 text-2xl font-bold text-white">
+            Mint NFT (0.01 ETH)
+          </button>
+        )}
       </div>
     </div>
   )
