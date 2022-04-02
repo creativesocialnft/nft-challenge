@@ -5,7 +5,9 @@
 /.pnp
 .pnp.js
 
-yarn.locl
+yarn.lock
+
+/sanity/node_modules
 
 # testing
 /coverage
