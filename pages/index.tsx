@@ -14,14 +14,14 @@ const Home = ({ collections }: Props) => {
   return (
     <div className="mx-auto flex min-h-screen max-w-7xl flex-col py-20 px-10 2xl:px-0">
       <Head>
-        <title>PAPAFAM NFT Drop</title>
+        <title>Creative Social NFT Drop</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <h1 className="mb-10 text-4xl font-extralight">
         The{' '}
         <span className="font-extrabold underline decoration-pink-600/50">
-          PAPAFAM
+          Creative Social
         </span>{' '}
         NFT Marketplace
       </h1>
