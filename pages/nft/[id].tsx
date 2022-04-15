@@ -204,7 +204,8 @@ function NFTDropPage({ collection }: Props) {
           {minted && address && (
           <p className="text-center text-md pt-4 text-green-800">
             You have successfully Minted your NFT!<br/>
-            <b><a href={`https://testnets.opensea.io/assets/${collection.address}/${claimedTokenId}`}>View on OpenSea</a></b>
+            <b><a href={`https://testnets.opensea.io/assets/${collection.address}/${claimedTokenId}`} target='_blank' rel="noreferrer" >View NFT on OpenSea</a></b> |
+            <b><a href={`https://testnets.opensea.io/collection/creative-social-nft-drop`} target='_blank' rel="noreferrer" >View Collection on OpenSea</a></b>
           </p>
         )}
         </div>
