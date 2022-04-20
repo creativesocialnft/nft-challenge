@@ -20,10 +20,10 @@ const Home = ({ collections }: Props) => {
 
       <h1 className="mb-10 text-4xl font-extralight">
         The{' '}
-        <span className="font-extrabold underline decoration-pink-600/50">
+        <span className="companyName font-extrabold underline decoration-pink-600/50">
           Creative Social
         </span>{' '}
-        NFT Marketplace
+        NFT Marketplace (Demo)
       </h1>
 
       <main className="bg-slate-100 p-10 shadow-xl shadow-purple-400/50">
@@ -32,13 +32,13 @@ const Home = ({ collections }: Props) => {
             <Link href={`/nft/${collection.slug.current}`} key={collection._id}>
               <div className="flex cursor-pointer flex-col items-center transition-all duration-200 hover:scale-105">
                 <img
-                  className="h-96 w-60 rounded-2xl object-cover"
+                  className="h-60 w-25 rounded-2xl object-cover"
                   src={urlFor(collection.mainImage).url()}
                   alt=""
                 />
 
                 <div className="p-5">
-                  <h2 className="text-3xl">{collection.title}</h2>
+                  <h2 className="text-2xl font-bold">{collection.title}</h2>
                   <p className="mt-2 text-sm text-gray-400">
                     {collection.description}
                   </p>
@@ -85,7 +85,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   }`
 
   const collections = await sanityClient.fetch(query)
-  console.log(collections)
+  // console.log(collections)
   return {
     props: {
       collections,
